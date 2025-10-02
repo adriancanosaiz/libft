@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/// Checks if the given character is an ASCII character (in the range 0 to 127).
+/// @param c The character to be checked.
+/// @return Returns a non-zero value if the character is an ASCII character, otherwise returns 0.
+/// @note This function checks if the character falls within the standard ASCII range.
+
 #include "libft.h"
 
 int	ft_isascii(int c)

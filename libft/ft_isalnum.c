@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/// Checks if the given character is alphanumeric (either a letter or a digit).
+/// @param c The character to be checked.
+/// @return Returns a non-zero value if the character is alphanumeric, otherwise returns 0.
+/// @note This function uses ft_isalpha and ft_isdigit to determine if the character is alphanumeric.
+
 #include "libft.h"
 
 int	ft_isalnum(int c)

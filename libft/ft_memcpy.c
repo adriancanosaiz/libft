@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/// Copies n bytes from memory area src to memory area dest.
+/// @param dest Pointer to the destination memory area where bytes will be copied.
+/// @param src Pointer to the source memory area from which bytes will be copied.
+/// @param n Number of bytes to copy.
+/// @return Returns a pointer to the destination memory area dest.
+
 #include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)

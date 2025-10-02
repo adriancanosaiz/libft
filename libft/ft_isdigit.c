@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/// Checks if the given character is a digit (0-9).
+/// @param c The character to be checked.
+/// @return Returns a non-zero value if the character is a digit, otherwise returns 0.
+/// @note This function checks if the character falls within the ASCII range for digits.
+
 #include "libft.h"
 
 int	ft_isdigit(int c)

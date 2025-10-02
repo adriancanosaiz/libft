@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/// Compares up to n characters of the strings s1 and s2.
+/// @param s1 The first string to be compared.
+/// @param s2 The second string to be compared.
+/// @param n The maximum number of characters to compare.
+/// @return An integer less than, equal to, or greater than zero if s1 (or the first n bytes thereof) is found, respectively, to be less than, to match, or be greater than s2.
+
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

@@ -10,6 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/// Calculates the length of the string pointed to by s, excluding the null terminator.
+/// @param s The string whose length is to be calculated.
+/// @return The length of the string (number of characters before the null terminator).
+
 #include "libft.h"
 
 size_t	ft_strlen(const char *s)

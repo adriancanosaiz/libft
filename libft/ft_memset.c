@@ -10,18 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/// Sets the first n bytes of the memory area pointed to by s to the specified byte value c.
+/// @param s Pointer to the memory area to be set.
+/// @param c The byte value to set (converted to an unsigned char).
+/// @param n Number of bytes to be set.
+/// @return Returns a pointer to the memory area s.
+
 #include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;
-	unsigned char	*str;
+	unsigned char	*str; // Pointer to traverse the memory area byte by byte
 
-	str = (unsigned char *)s;
+	str = (unsigned char *)s; // Cast the void pointer to an unsigned char pointer for byte-wise manipulation
 	i = 0;
 	while (i < n)
 	{
-		str[i] = (unsigned char)c;
+		str[i] = (unsigned char)c; // Set each byte to the specified value
 		i++;
 	}
 	return (s);

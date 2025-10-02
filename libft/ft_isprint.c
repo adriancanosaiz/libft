@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/// Checks if the given character is a printable character (including space).
+/// @param c The character to be checked.
+/// @return Returns a non-zero value if the character is printable, otherwise returns 0.
+/// @note This function checks if the character falls within the ASCII range for printable characters (32 to 126).
+
 #include "libft.h"
 
 int	ft_isprint(int c)

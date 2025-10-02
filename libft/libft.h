@@ -15,6 +15,7 @@
 
 # include <stdio.h>
 # include <stddef.h>
+# include <stdlib.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
