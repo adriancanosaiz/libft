@@ -19,27 +19,27 @@
 
 int	ft_atoi(const char *str)
 {
-	int				sign; // 1 for positive, -1 for negative
-	long long		result; // To handle overflow during conversion
-	size_t			i; // Index for iterating through the string
+	int				sign;
+	long long		result;
+	size_t			i;
 
 	sign = 1;
 	result = 0;
 	i = 0;
-	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13)) // Skip whitespace characters
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
 		i++;
-	if (str[i] == '-' || str[i] == '+') // Handle optional sign
+	if (str[i] == '-' || str[i] == '+')
 	{
-		if (str[i] == '-') // If negative sign, set sign to -1
+		if (str[i] == '-')
 			sign = -1;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9') // Convert numeric characters to integer
+	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result = result * 10 + (str[i] - '0');
-		if (result * sign > 2147483647) // Check for overflow
+		if (result * sign > 2147483647)
 			return (-1);
-		if (result * sign < -2147483648) // Check for underflow
+		if (result * sign < -2147483648)
 			return (0);
 		i++;
 	}

@@ -25,11 +25,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	if (!dst || !src)
 		return (0);
 	i = 0;
-	while (src[i] && i < dstsize - 1) // Leave space for null terminator
+	while (src[i] && i < dstsize - 1)
 	{
-		dst[i] = src[i]; // Copy character from src to dst
+		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
-	return (ft_strlen(src)); // Return the length of src
+	return (ft_strlen(src));
 }

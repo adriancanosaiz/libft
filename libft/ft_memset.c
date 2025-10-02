@@ -21,13 +21,13 @@
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;
-	unsigned char	*str; // Pointer to traverse the memory area byte by byte
+	unsigned char	*str;
 
-	str = (unsigned char *)s; // Cast the void pointer to an unsigned char pointer for byte-wise manipulation
+	str = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{
-		str[i] = (unsigned char)c; // Set each byte to the specified value
+		str[i] = (unsigned char)c;
 		i++;
 	}
 	return (s);

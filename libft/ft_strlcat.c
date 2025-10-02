@@ -26,16 +26,16 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	if (!dst || !src)
 		return (0);
-	dst_len = ft_strlen(dst); // Length of the existing string in dst
-	src_len = ft_strlen(src); // Length of the source string
+	dst_len = ft_strlen(dst);
+	src_len = ft_strlen(src);
 	if (dstsize <= dst_len)
 		return (dstsize + src_len);
 	i = 0;
-	while (src[i] && (dst_len + i) < (dstsize - 1)) // Leave space for null terminator
+	while (src[i] && (dst_len + i) < (dstsize - 1))
 	{
-		dst[dst_len + i] = src[i]; // Append character from src to dst
+		dst[dst_len + i] = src[i];
 		i++;
 	}
 	dst[dst_len + i] = '\0';
-	return (dst_len + src_len); // Return the total length of the string it tried to create
+	return (dst_len + src_len);
 }

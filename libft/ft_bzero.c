@@ -25,9 +25,9 @@ void	ft_bzero(void *s, size_t n)
 	size_t			i;
 	unsigned char	*str;
 
-	str = (unsigned char *)s; // Cast the void pointer to an unsigned char pointer for byte-wise manipulation
+	str = (unsigned char *)s;
 	i = 0;
-	while (i < n) // Loop through the first n bytes
+	while (i < n)
 	{
 		str[i] = '\0';
 		i++;

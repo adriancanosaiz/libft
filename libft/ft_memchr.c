@@ -24,13 +24,13 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	const unsigned char	*str;
 	unsigned char		ch;
 
-	str = (const unsigned char *)s; // Cast the void pointer to an unsigned char pointer for byte-wise manipulation
-	ch = (unsigned char)c; 	  // Convert the int c to an unsigned char for comparison
+	str = (const unsigned char *)s;
+	ch = (unsigned char)c;
 	i = 0;
 	while (i < n)
 	{
 		if (str[i] == ch)
-			return ((void *)(str + i)); // Return a pointer to the first occurrence of c
+			return ((void *)(str + i));
 		i++;
 	}
 	return (NULL);
