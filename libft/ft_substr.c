@@ -6,9 +6,16 @@
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 11:05:11 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/06 11:07:59 by acano-sa         ###   ########.fr       */
+/*   Updated: 2025/10/06 12:41:34 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/// Extracts a substring from the given string.
+/// @param s The original string.
+/// @param start The starting index of the substring.
+/// @param len The length of the substring.
+/// @return A pointer to the newly allocated substring, 
+///		or NULL if allocation fails.
 
 #include "libft.h"
 

@@ -6,11 +6,12 @@
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 18:32:23 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/02 18:09:38 by acano-sa         ###   ########.fr       */
+/*   Updated: 2025/10/06 12:39:31 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/// Copies up to dstsize - 1 characters from the string src to dst, null-terminating the result if dstsize is not 0.
+/// Copies up to dstsize - 1 characters from the string src to dst, 
+///		null-terminating the result if dstsize is not 0.
 /// @param dst The destination string where the content is to be copied.
 /// @param src The source string from which the content is to be copied.
 /// @param dstsize The size of the destination buffer.

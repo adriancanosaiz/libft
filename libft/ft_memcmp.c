@@ -6,7 +6,7 @@
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 19:00:44 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/01 19:57:50 by acano-sa         ###   ########.fr       */
+/*   Updated: 2025/10/06 12:34:20 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 /// @param s1 Pointer to the first memory area to be compared.
 /// @param s2 Pointer to the second memory area to be compared.
 /// @param n Number of bytes to compare.
-/// @return An integer less than, equal to, or greater than zero if the first n bytes of s1 is found, respectively, to be less than, to match, or be greater than the first n bytes of s2.
+/// @return An integer less than, equal to, or greater than zero 
+///		if the first n bytes of s1 is found, respectively, 
+///		to be less than, to match, or be greater than the first n bytes of s2.
 
 #include "libft.h"
 

@@ -6,7 +6,7 @@
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 18:48:02 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/01 19:49:51 by acano-sa         ###   ########.fr       */
+/*   Updated: 2025/10/06 12:40:24 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 /// @param s1 The first string to be compared.
 /// @param s2 The second string to be compared.
 /// @param n The maximum number of characters to compare.
-/// @return An integer less than, equal to, or greater than zero if s1 (or the first n bytes thereof) is found, respectively, to be less than, to match, or be greater than s2.
+/// @return An integer less than, equal to, or greater than zero if s1 
+///		(or the first n bytes thereof) is found, 
+///		respectively, to be less than, to match, or be greater than s2.
 
 #include "libft.h"
 

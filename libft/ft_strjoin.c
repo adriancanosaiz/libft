@@ -6,11 +6,18 @@
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 11:10:12 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/06 11:10:31 by acano-sa         ###   ########.fr       */
+/*   Updated: 2025/10/06 12:37:52 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/// Joins two strings into a newly allocated string.
+/// @param s1 The first string.
+/// @param s2 The second string.
+/// @return A pointer to the newly allocated string 
+///			containing the concatenation of s1 and s2,
+///         or NULL if allocation fails or if either s1 or s2 is NULL.
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

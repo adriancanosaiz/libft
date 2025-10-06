@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 18:34:13 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/06 12:39:42 by acano-sa         ###   ########.fr       */
+/*   Created: 2025/10/06 12:19:11 by acano-sa          #+#    #+#             */
+/*   Updated: 2025/10/06 12:19:54 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/// Calculates the length of the string pointed to by s, 
-///		excluding the null terminator.
-/// @param s The string whose length is to be calculated.
-/// @return The length of the string 
-///		(number of characters before the null terminator).
-
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	len;
+/// Applies a function to each character of a string, passing the index and
+/// a pointer to the character.
+/// @param s The string to be modified.
+/// @param f The function to apply to each character.
 
-	len = 0;
-	while (s[len] != '\0')
-		len++;
-	return (len);
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+{
+	unsigned int	i;
+
+	if (!s || !f)
+		return ;
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }

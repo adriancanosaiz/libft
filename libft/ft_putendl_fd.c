@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 18:34:13 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/06 12:39:42 by acano-sa         ###   ########.fr       */
+/*   Created: 2025/10/06 12:22:36 by acano-sa          #+#    #+#             */
+/*   Updated: 2025/10/06 12:22:57 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/// Calculates the length of the string pointed to by s, 
-///		excluding the null terminator.
-/// @param s The string whose length is to be calculated.
-/// @return The length of the string 
-///		(number of characters before the null terminator).
-
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	len;
+/// Writes a string followed by a newline to the specified file descriptor.
+/// @param s The string to write.
+/// @param fd The file descriptor to write to.
 
-	len = 0;
-	while (s[len] != '\0')
-		len++;
-	return (len);
+void	ft_putendl_fd(char *s, int fd)
+{
+	if (!s || fd < 0)
+		return ;
+	write(fd, s, ft_strlen(s));
+	write(fd, "\n", 1);
 }

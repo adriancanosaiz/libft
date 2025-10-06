@@ -6,15 +6,19 @@
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 18:36:21 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/02 18:04:27 by acano-sa         ###   ########.fr       */
+/*   Updated: 2025/10/06 12:39:21 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/// Appends the string src to the end of dst. It will append at most dstsize - strlen(dst) - 1 characters. It will then NUL-terminate, unless dstsize is 0 or the original dst string was longer than dstsize.
+/// Appends the string src to the end of dst. 
+///		It will append at most dstsize - strlen(dst) - 1 characters. 
+///		It will then NUL-terminate, 
+//		unless dstsize is 0 or the original dst string was longer than dstsize.
 /// @param dst The destination string to which src will be appended.
 /// @param src The source string to be appended to dst.
 /// @param dstsize The total size of the destination buffer.
-/// @return The total length of the string it tried to create (initial length of dst plus length of src).
+/// @return The total length of the string it tried to create 
+///		(initial length of dst plus length of src).
 
 #include "libft.h"
 

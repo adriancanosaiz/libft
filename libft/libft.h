@@ -6,7 +6,7 @@
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:22:29 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/01 20:01:48 by acano-sa         ###   ########.fr       */
+/*   Updated: 2025/10/06 12:43:40 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdio.h>
 # include <stddef.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -41,5 +42,17 @@ int		ft_atoi(const char *str);
 
 char	*ft_strdup(const char *s1);
 void	*ft_calloc(size_t count, size_t size);
+
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s, char const *set);
+char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif

@@ -6,14 +6,15 @@
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 19:44:17 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/01 19:48:41 by acano-sa         ###   ########.fr       */
+/*   Updated: 2025/10/06 12:29:43 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/// Converts the initial portion of the string pointed to by str to int representation.
+/// Converts the initial portion of the string pointed 
+/// 	to by str to int representation.
 /// @param str The string to be converted.
-/// @return The converted integer value. If the value exceeds the range of int, it returns -1 for overflow and 0 for underflow.
-/// @note This function handles leading whitespace, optional sign, and numeric characters. It stops converting when a non-numeric character is encountered.
+/// @return The converted integer value. If the value exceeds the range of int, 
+///		it returns -1 for overflow and 0 for underflow.
 
 #include "libft.h"
 

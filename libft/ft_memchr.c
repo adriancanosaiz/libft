@@ -6,15 +6,20 @@
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 19:00:00 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/01 19:57:40 by acano-sa         ###   ########.fr       */
+/*   Updated: 2025/10/06 12:33:32 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/// Searches for the first occurrence of the character c (converted to an unsigned char) in the first n bytes of the memory area pointed to by s.
+/// Searches for the first occurrence of the character c 
+///		(converted to an unsigned char) 
+///		in the first n bytes of the memory area pointed to by s.
 /// @param s Pointer to the memory area to be searched.
-/// @param c The character to be located (passed as an int, but treated as an unsigned char).
+/// @param c The character to be located (passed as an int, 
+/// 	but treated as an unsigned char).
 /// @param n The number of bytes to be analyzed.
-/// @return A pointer to the first occurrence of the character c in the memory area s, or NULL if the character is not found within the first n bytes.
+/// @return A pointer to the first occurrence of the character c 
+///		in the memory area s, 
+///		or NULL if the character is not found within the first n bytes.
 
 #include "libft.h"
 

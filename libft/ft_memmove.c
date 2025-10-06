@@ -6,13 +6,17 @@
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 17:42:08 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/01 19:53:29 by acano-sa         ###   ########.fr       */
+/*   Updated: 2025/10/06 12:37:14 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/// Copies n bytes from memory area src to memory area dest. The memory areas may overlap; the copy is always done in a non-destructive manner.
-/// @param dest Pointer to the destination memory area where bytes will be copied.
-/// @param src Pointer to the source memory area from which bytes will be copied.
+/// Copies n bytes from memory area src to memory area dest.  
+///		The memory areas may overlap; 
+///			the copy is always done in a non-destructive manner.
+/// @param dest Pointer to the destination 
+///		memory area where bytes will be copied.
+/// @param src Pointer to the source 
+///		memory area from which bytes will be copied.
 /// @param n Number of bytes to copy.
 /// @return Returns a pointer to the destination memory area dest.
 

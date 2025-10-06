@@ -6,15 +6,19 @@
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 19:43:50 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/01 19:49:53 by acano-sa         ###   ########.fr       */
+/*   Updated: 2025/10/06 12:40:52 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/// Locates the first occurrence of the null-terminated string needle in the string haystack, where not more than len characters are searched.
+/// Locates the first occurrence of the null-terminated 
+///		string needle in the string haystack, 
+///		where not more than len characters are searched.
 /// @param haystack The string to be searched.
 /// @param needle The substring to be located within haystack.
 /// @param len The maximum number of characters to search in haystack.
-/// @return A pointer to the first occurrence of needle in haystack within the first len characters, or NULL if needle is not found. If needle is an empty string, returns haystack.
+/// @return A pointer to the first occurrence of needle in haystack 
+///			within the first len characters, or NULL if needle is not found. 
+///			If needle is an empty string, returns haystack.
 
 #include "libft.h"
 
