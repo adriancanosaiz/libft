@@ -6,7 +6,7 @@
 /*   By: acano-sa <acano-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 18:59:30 by acano-sa          #+#    #+#             */
-/*   Updated: 2025/10/06 12:41:25 by acano-sa         ###   ########.fr       */
+/*   Updated: 2025/10/09 13:30:05 by acano-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,18 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	const char	*last = NULL;
+	char	*str;
+	char	*last;
 
-	while (*s)
+	str = (char *)s;
+	last = NULL;
+	while (*str)
 	{
-		if (*s == (char)c)
-			last = s;
-		s++;
+		if ((unsigned char)*str == (unsigned char)c)
+			last = str;
+		str++;
 	}
-	if (c == '\0')
-		return ((char *)s);
-	return ((char *)last);
+	if ((unsigned char)c == '\0')
+		return (str);
+	return (last);
 }
